@@ -118,6 +118,39 @@ scores["Victoria"] = 5
 
 var results = Array<Int>()
 
+// -----------------------------------------------------------
+// Enums
+
+let result = "failure"
+let result2 = "failed"
+let result3 = "fail"
+
+enum Result {
+    case success
+    case failure
+}
+
+let result4 = Result.success
+
+enum Activity {
+    case bored
+    case running(destination: String)
+    case talking(topic: String)
+    case singing(volume: Int)
+}
+
+let talking = Activity.talking(topic: "Disney's Films")
+
+enum Planet: Int {
+    case mercury
+    case venus
+    case earth
+    case mars
+}
+
+let earth = Planet(rawValue: 2)
+
+
 
 
 
